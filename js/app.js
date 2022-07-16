@@ -3,7 +3,7 @@ const options = ["rock", "paper", "scissors"];
 let winners = [];
 
 function playerPlay() {
-    let inputSelection = prompt("Let's play!!, choose rock , paper or scissors:")
+    let inputSelection = prompt("Let's play!!, choose rock , paper or scissors:");
      // To remove spaces and convert everything in lowercase
     inputSelection = inputSelection.toLowerCase().trim();
 
@@ -31,11 +31,11 @@ function playRound(round) {
         } else {
             return "Computer";
         }
-    }
+    };
 
-    const theWinner = viewWinner(playerSelection, computerSelection)
+    const theWinner = viewWinner(playerSelection, computerSelection);
     
-    winners.push(theWinner) // store every winner for each round played
+    winners.push(theWinner); // store every winner for each round played
 
     // Display the round results
     roundResults(playerSelection, computerSelection, theWinner, round);
@@ -54,11 +54,11 @@ function winnerResults() {
     console.log("Ties:", ties);
     // Check results
     if(playerWins > computerWins){
-        console.log("Awesome!!! you win.")
+        console.log("Awesome!!! you win.");
     } else if(playerWins < computerWins){
-        console.log("Loser!!! Computer wins.")
+        console.log("Loser!!! Computer wins.");
     } else {
-        console.log("It's a tie!!!")
+        console.log("It's a tie!!!");
     }
 }
 

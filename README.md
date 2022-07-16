@@ -9,6 +9,16 @@ taught by [**Brainnest**](https://www.brainnest.consulting/).
 
 ---
 
+## Contents
+
+1. [**Project Purpose**](#project-purpose)
+2. [**Technologies Used**](#technologies-used)
+3. [**Deployment**](#deployment)
+4. [**Testing**](#testing)
+5. [**Credits**](#credits)
+
+---
+
 ## Project Purpose
 
 The project consists of a **rock-paper-scissors game**, which you can play from
@@ -18,6 +28,23 @@ computer. Can you beat the computer, or is it superior to you?
 **Attention:** The index page is completely empty, you will have to play using the promp
 window that will appear, and remember, don't forget to open the devtools to check the
 console and consult the results.
+
+|                                                  **Game example**                                                   |
+| :-----------------------------------------------------------------------------------------------------------------: |
+| ![Game Example](https://github.com/cotebarrientos/main-js-assignment/blob/main/img/console_screeshoot.jpg?raw=true) |
+
+## Technologies Used
+
+### Languages
+
+- HTML 5
+- JavaScript
+
+### Tools Used
+
+- VS Code
+- GitHub
+- Git
 
 ## Deployment
 
@@ -51,3 +78,52 @@ To deploy this page to GitHub Pages from its [GitHub repository](https://github.
 5. On selecting Master Branch the page is automatically refreshed, the website is now deployed.
 6. Scroll back down to the GitHub Pages section to retrieve the link to the deployed website.
 7. Well done!, you've deployed this project.
+
+## Testing
+
+### Validation Services
+
+#### HTML 5
+
+I used <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> to validate my HTML files by direct input.
+
+- my index **.html** file was tested and no errors were found.
+
+#### HTML 5
+
+I used <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> to validate my HTML files by direct input.
+
+- my index **.html** file was tested and no errors were found.
+
+#### JavaScript
+
+I used <a href="https://jshint.com/" target="_blank">JShint</a> to validate my JS files by direct input.
+
+- The app **.js** file was checked, no error were found.
+  - Metrics:
+    - There are 10 functions in this file.
+    - Function with the largest signature take 4 arguments, while the median is 1.
+    - Largest function has 11 statements in it, while the median is 3.5.
+    - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
+
+### Game test
+
+I tested this game several times, checking that it returned correct answers. The game is working correctly.
+
+### Further improvements
+
+- Refine the promp window, preventing a malicious user from adding data that is not allowed.
+
+- Add css styling and create a game with graphical interface.
+
+## Credits
+
+These websites were really useful to troubleshooting the issues I faced:
+
+- [w3schools](https://www.w3schools.com/)
+- [Stackoverflow](https://stackoverflow.com/)
+- [MDN Web Docs](https://developer.mozilla.org/en-US/)
+
+[**Back to top**](#contents)
+
+---
