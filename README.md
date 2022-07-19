@@ -25,9 +25,11 @@ The project consists of a **rock-paper-scissors game**, which you can play from
 the browser console. The game has 5 rounds where you will confront the
 computer. Can you beat the computer, or is it superior to you?
 
-**Attention:** The index page is completely empty, you will have to play using the promp
-window that will appear, and remember, don't forget to open the devtools to check the
-console and consult the results.
+**Attention:** The index page is completely empty, you will have to play using the prompt
+window that will appear, and remember, don't forget to **OPEN THE DEVTOOLS BEFORE OF VISIT THE WEBSITE** to
+check the console and consult the results. To open the developer console window on Chrome, use the keyboard
+shortcut **Ctrl + Shift + J** (on Windows) or **Command + Option + J** (on Mac). Alternatively, you can use
+the Chrome menu in the browser window, select the option "More Tools," and then select "Developer Tools."
 
 |                                                  **Game example**                                                   |
 | :-----------------------------------------------------------------------------------------------------------------: |
@@ -101,18 +103,26 @@ I used <a href="https://jshint.com/" target="_blank">JShint</a> to validate my J
 
 - The app **.js** file was checked, no error were found.
   - Metrics:
-    - There are 10 functions in this file.
+    - There are 11 functions in this file.
     - Function with the largest signature take 4 arguments, while the median is 1.
-    - Largest function has 11 statements in it, while the median is 3.5.
+    - Largest function has 12 statements in it, while the median is 4.
     - The most complex function has a cyclomatic complexity value of 8 while the median is 1.
 
 ### Game test
 
-I tested this game several times, checking that it returned correct answers. The game is working correctly.
+- I tested this game several times, checking that it returned correct answers.
+- The game doesn't allow the user to enter empty strings.
+- The player is not allowed to enter options other than those allowed in the game, and if that happens, the game will not permit the user to advance until a valid option is entered.
+- The player cannot stop the game, until he completes 5 rounds.
+
+This game shows 2 types of messages and are as follows:
+
+|                                                 Message 1                                                  |                                                  Message 2                                                  |
+| :--------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------: |
+| ![First message](https://github.com/cotebarrientos/main-js-assignment/blob/main/img/message1.jpg?raw=true) | ![Second Message](https://github.com/cotebarrientos/main-js-assignment/blob/main/img/message2.jpg?raw=true) |
+|                         As initial message and when a player types an empty string                         |                           When a player types something not allowed in this game                            |
 
 ### Further improvements
-
-- Refine the promp window, preventing a malicious user from adding data that is not allowed.
 
 - Add css styling and create a game with graphical interface.
 
