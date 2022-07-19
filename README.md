@@ -91,12 +91,6 @@ I used <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a
 
 - my index **.html** file was tested and no errors were found.
 
-#### HTML 5
-
-I used <a href="https://validator.w3.org/" target="_blank">W3C HTML Validator</a> to validate my HTML files by direct input.
-
-- my index **.html** file was tested and no errors were found.
-
 #### JavaScript
 
 I used <a href="https://jshint.com/" target="_blank">JShint</a> to validate my JS files by direct input.
