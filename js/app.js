@@ -3,11 +3,38 @@ const options = ["rock", "paper", "scissors"];
 let winners = [];
 
 function playerPlay() {
-    let inputSelection = prompt("Let's play!!, choose rock , paper or scissors:");
-     // To remove spaces and convert everything in lowercase
+    let inputSelection = prompt(
+        `Let's play!!, choose rock , paper or scissors. You cannot stop the game until you finish 5 rounds.`
+    );
+    // To avoid stopping this game until the player completes 5 rounds.
+    while(inputSelection == null){
+        inputSelection = prompt(
+            `Let's play!!, choose rock , paper or scissors. You cannot stop the game until you finish 5 rounds.`
+        );
+    }
+    // To remove spaces and convert everything in lowercase
     inputSelection = inputSelection.toLowerCase().trim();
+    // To verify that the player's writing matches the 3 options allowed in this game
+    let checkInput = validateInput(inputSelection);
+    while(checkInput == false) {
+        inputSelection =  prompt(
+            `Type Rock, Paper, or Scissors. Spelling needs to be exact, but capitalization doesn't matter.`
+        );
+        while(inputSelection == null){
+            inputSelection = prompt(
+                `Let's play!!, choose rock , paper or scissors. You cannot stop the game until you finish 5 rounds.`
+            );
+        }
+        inputSelection = inputSelection.toLowerCase().trim();
+        checkInput = validateInput(inputSelection);
+    }
 
     return inputSelection;  
+}
+
+// Takes an option from options array.
+function validateInput(option) {
+    return options.includes(option);
 }
 
 function computerPlay(){
@@ -15,7 +42,6 @@ function computerPlay(){
 }
 
 function playRound(round) {
-
     let playerSelection = playerPlay();
     const computerSelection = computerPlay();
 
@@ -40,7 +66,6 @@ function playRound(round) {
     // Display the round results
     roundResults(playerSelection, computerSelection, theWinner, round);
 }
-
 
 function winnerResults() {
     // To filter every item inside of winners array
